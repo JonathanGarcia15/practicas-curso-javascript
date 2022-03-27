@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content "IE=edge">
+	<meta name="viewport" content "width=device-width, initial-scanle 1.0">
+	<title>Pokédex</title>
+    <link rel="stylesheet" href="pokedex.css">
+	<link rel="icon" type="image/x-icon" href="pokemon.ico">
+</head>
+
+<body>
+	<h1>Bienvenido al Pokédex</h1>
+	
+	<p>Escribe el nombre del Pokémon para ver sus estadísticas. </p>
+	
+	
+	<div data-poke-card class="poke-card">
+	
+		<input type="text" placeholder = "Nombre del Pokémon" id="pokeName" name= "pokeName"><br>
+		<br><button onclick="fetchPokemon()">Buscar Pokémon</button><br><br><br>
+		
+		<span id="nombrePokemon"></span><br>
+        <div data-poke-img-container class="img-container">
+            <img id = "pokeImagen" class="poke-img" alt="Pokémon" width="150px" src="pokeball.png"/><br>
+        </div>
+		<span id="pokeID"></span><br>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+		<span id="error"></span><br>
+    </div>
+	
+	
+		
+	
+	<!--
+	
+	<img src="pokeball.png" id = "pokeImagen" alt="Pokémon" width="150px">
+	<br><br><br>
+	<input type="text" placeholder = "pikachu" id="pokeName" name= "pokeName">
+	<button onclick="fetchPokemon()">Buscar Pokémon</button>
+	<br><br>
+	<span id="error"></span><br>
+	
+	-->
+	
+	
+	
+</body>
+
+<footer>
+	<script src="pokedex.js"></script>
+</footer>
+
+
+</html>
